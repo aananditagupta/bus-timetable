@@ -1,46 +1,22 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Problem 
+Patrons at bus station want to know when their buses are due to depart. As they wait at their terminal, they will see a display with a countdown by minute for when their bus is due to depart the station.
 
-## Available Scripts
+The services running are as follows:
+1. The X15 to SHEFFIELD departs every hour, on the hour, and is a 24-hour service.
+2. The 52 to WAKEFIELD departs every 12 minutes. The service starts at 6am and the last bus departs at 9pm.
+3. The X78 to DONCASTER departs every 20 minutes and is a 24-hour service.
+4. The 126 to LEEDS departs every 6 minutes. The service starts at 5.30am and the last bus departs at 1.30am
 
-In the project directory, you can run:
+We would like you to implement a bus timetable display to show the next two buses due to depart the terminus.
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Acceptance Criteria:
+- The display should show a clock, so people know what time it is.
+- The display should show the next two buses due to leave the station
+- The display should show a minute-by-minute update on when the buses are due to depart
+- The display should indicate when no buses are due to depart in the next 15 minutes
+- Every minute on the timetable should be represented in real-time seconds
+(Le 1 hour = 60 seconds - to speed things up so we can see the buses in action)
+- All buses leaving the station should be represented
+- The application must be built using front end JavaScript technologies - `React/Typescript`
