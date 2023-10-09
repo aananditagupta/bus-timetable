@@ -54,4 +54,4 @@ Inside the `BusList` component, a dynamic CSS class is assigned to each bus serv
 
 ## Output
 
-!(assets/final_image.png)
+!(./assets/final_image.png)
