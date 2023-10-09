@@ -54,4 +54,5 @@ Inside the `BusList` component, a dynamic CSS class is assigned to each bus serv
 
 ## Output
 
-!(./assets/final_image.png)
+<img width="1680" src="https://github.com/aananditagupta/bus-timetable/assets/47008984/e36c0825-cbf9-44b9-a0dd-f62848475937">
+
