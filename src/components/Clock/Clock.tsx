@@ -24,9 +24,9 @@ const Clock = () => {
   const formattedSeconds = String(seconds).padStart(2, '0');
 
   return (
-    <div className="clock">
+    <div className="clock-container">
       <h1>
-        {formattedHours}:{formattedMinutes}:{formattedSeconds}
+        Current Time: {formattedHours}:{formattedMinutes}:{formattedSeconds}
       </h1>
     </div>
   );

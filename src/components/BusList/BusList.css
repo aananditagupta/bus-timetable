@@ -1,0 +1,19 @@
+/* buslist.css */
+
+.bus-item {
+    background-color: lightgray;
+    margin-bottom: 1em;
+    padding: 1em;
+  }
+  
+  .bus-item--about-to-depart {
+    background-color: yellow;
+    animation: flicker 1s linear infinite;
+  }
+  
+  @keyframes flicker {
+    0% { background-color: yellow; }
+    50% { background-color: orange; }
+    100% { background-color: yellow; }
+  }
+  
