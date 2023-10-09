@@ -51,3 +51,7 @@ Inside the `BusList` component, a dynamic CSS class is assigned to each bus serv
 - `Maps and Routes`:To give you a better idea of where each bus goes, I'd include a small map with the route for each bus service. This step would have also included integrating the app with an API
 
 - `User Preferences`:I could also add a feature to save your favorite bus routes for quick access.
+
+## Output
+
+!(assets/final_image.png)
