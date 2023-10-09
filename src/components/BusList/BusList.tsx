@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './BusList.css';
 
 // Define the type for a single bus service
@@ -18,15 +18,13 @@ interface BusListProps {
 
 // BusList component
 const BusList = ({ services, currentTime }: BusListProps) => {
-  const [randomOffsets, setRandomOffsets] = useState<number[]>([]);
-
-  useEffect(() => {
-    setRandomOffsets(services.map(() => Math.floor(Math.random() * 60)));
-  }, [services]);
-
+  if (!services) {
+    return <div>Error: Services data is not available.</div>;
+  }
   return (
     <div>
       {services.map((service, index) => {
+        
         // Determine if the service is active right now
         let isActive = false;
         if (service.start > service.end) {
@@ -37,7 +35,7 @@ const BusList = ({ services, currentTime }: BusListProps) => {
 
         if (isActive || currentTime < service.start) {
           const timeSinceLastDeparture = (currentTime - service.start + 86400) % (service.interval * 60);
-          const timeToNextDeparture = service.interval * 60 - timeSinceLastDeparture + randomOffsets[index];
+          const timeToNextDeparture = service.interval * 60 - timeSinceLastDeparture;
 
           // Format time in hh:mm:ss
           const hours = Math.floor(timeToNextDeparture / 3600);
